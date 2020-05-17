@@ -1,0 +1,14 @@
+/* You do not need to change anything in this CSS section. */
+
+.row div {
+    border: solid lightgreen;
+  }
+  
+  #viewport-size {
+    background: lightgreen;
+    padding: 5px;
+  }
+  
+  body {
+    margin: 10px;
+  }
