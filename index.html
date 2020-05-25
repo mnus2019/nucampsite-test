@@ -15,7 +15,7 @@
     
         <!-- Additional CSS must be placed after Bootstrap CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <title>NuCamp: A Better Way To Camp</title>
     </head>
 
@@ -63,7 +63,7 @@
         </nav>
 
     <div class="container">
-        <div class="row row-content  align-items-center">
+        <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                  <h2 class="text-sm-right">Discover & Review</h2>
         </div>
@@ -131,8 +131,7 @@
                             <label  for="" class="col-form-label col-sm-6">Number of Campers</label>
                             <div class="col-sm-6">
                                 <select class="form-control" name="numCampers" id="numCampers">
-                                    <option value="select">select...</option>
-                                 
+                                    <option disabled selected value="select">select...</option>                               
                                     <option value="1">1</option>
                                   <option value="2">2</option>
                                   <option value="3">3</option>
@@ -143,7 +142,7 @@
                                
                             </div>
                         </div>
-                        <div class="row ">
+                        <div class="row mt-2">
                             <label class="col-form-label col-sm-6" for="">Date</label>
                             <div class="col-sm-6">
                             <input type="text" id="" class="form-control mb-3" name="date" placeholder="mm/dd/yyyy">

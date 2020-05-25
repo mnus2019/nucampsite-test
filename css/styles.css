@@ -30,8 +30,17 @@ header h2 {
 .row-content {
     padding: 50px 0;
     border-bottom:2px solid rgb(240, 242, 243);    
+    /* border-bottom: 1px ridge; */
+    /* border-bottom-color: initial; */
+
     min-height: 200px;
 }
 .navbar{
     background-color: #901cad;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
 }
