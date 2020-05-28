@@ -26,6 +26,15 @@ header h2 {
     background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
     color: white;
 }
+/* .imgcarousel{
+    width:100%;
+    height: 100%;
+}
+container1{
+    width:1200px;
+    height: 100%;
+} */
+
 
 .row-content {
     padding: 50px 0;
@@ -36,6 +45,7 @@ header h2 {
     min-height: 200px;
 }
 .navbar{
+   
     background-color: #901cad;
 }
 
@@ -51,3 +61,6 @@ header h2 {
 .carousel {
     border: solid #5637DD;
 }
+
+
+
