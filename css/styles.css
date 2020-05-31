@@ -20,7 +20,7 @@ header h2 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
+  background-image: linear-gradient(to right, #dd9b37, #3046C5, #60106b);
   color: white; }
 
 /* .imgcarousel{
@@ -47,10 +47,10 @@ container1{
   padding: 10px; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-  border: solid #5637dd; }
+  border: solid #dd9b37; }
 
 #carouselButton {
   position: absolute;

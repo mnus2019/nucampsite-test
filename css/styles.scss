@@ -1,9 +1,9 @@
 $color-primary: #3046C5;
-$color-secondary: #5637dd;
+$color-secondary: #dd9b37;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
-$color-black-transparent: rgba(0, 0, 0, 0.3);
+$color-transparent-black: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
@@ -72,7 +72,7 @@ container1{
     padding: 10px;
 }
 .carousel-caption {
-    background-color: $color-black-transparent;
+    background-color:$color-transparent-black;
 }
 
 .carousel {
