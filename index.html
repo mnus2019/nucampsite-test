@@ -69,7 +69,7 @@
                                        
                                     </div>
                                 </div>
-                                <div class="row form-group mt-2">
+                                <div class="row form-group ">
                                     <label class="col-form-label col-sm-6" for="">Date</label>
                                     <div class="col-sm-6">
                                     <input type="text" id="" class="form-control mb-3" name="date" placeholder="mm/dd/yyyy">
@@ -77,20 +77,21 @@
                                     </div>
                                 </div>
                                 <div class="row form-group">
-                                    <label class="col-form-label col-sm-6" for="">Campsite Type</label>
-                                    <div class="col  btn-group-toggle btn-group" data-toggle="buttons">
-                                        <label class="btn btn-success ">
-                                            <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> tent
+                                    <label class="col-form-label col-sm-6" >Campsite Type</label>
+                                    <div class="col col-sm-2 btn-group-toggle btn-group" data-toggle="buttons">
+                                        <label class="btn btn-success active ">
+                                            <input type="radio"  value="site" name="siteType" id="siteTent" autocomplete="off" checked> tent
                                           </label>
                                           <label class="btn btn-primary">
-                                            <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
+                                            <input type="radio" value="RV" name="siteType" id="siteRV" autocomplete="off"> RV
                                           </label>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="form-group row">
                                     <div class="col ">
-                                        <button type="submit" class="btn btn-outline-primary mr-2 ">Search</button>
-                                        <button  class="btn btn-outline-secondary ">Cancel</button>
+                                        <button  class="btn btn-secondary ">Cancel</button>
+                                        <button type="submit" class="btn btn-primary mr-2 ">Search</button>
+                                        
                                     </div>
                                 </div>
                             </form>
@@ -208,7 +209,15 @@
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
+              
+                
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
+                  
+                
             </div>
+            
         </div>
         </div>
 
@@ -346,6 +355,23 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+      <script>
+        $(function() {
+            // $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause"); 
+                }
+            });
+        });
+    </script>
 
 </body>
 

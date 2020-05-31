@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.tml",
   "scripts": {
+   
     "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Minassie Tse",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.12.0"
   },
   "dependencies": {
     "awesome": "0.0.7",
