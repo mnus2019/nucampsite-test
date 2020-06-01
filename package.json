@@ -14,6 +14,7 @@
   "author": "Minassie Tse",
   "license": "ISC",
   "devDependencies": {
+    "jquery": "^3.5.1",
     "lite-server": "^2.5.4",
     "node-sass": "^4.12.0",
     "onchange": "^3.3.0",
@@ -25,7 +26,6 @@
     "bootstrap-social": "^5.1.1",
     "font": "0.0.4",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
 }

@@ -81,3 +81,10 @@ header h2 {
     @media (min-width: 0) and (max-width: 600px) {
         .site-footer{
         display: none; } }
+
+
+        #carouselButton {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }

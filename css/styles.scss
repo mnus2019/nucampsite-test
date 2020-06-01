@@ -1,5 +1,5 @@
 $color-primary: #3046C5;
-$color-secondary: #dd9b37;
+$color-secondary: #7437dd;
 $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
@@ -51,7 +51,10 @@ container1{
     width:1200px;
     height: 100%;
 } */
-
+img{
+   position: relative; 
+   z-index: 1;
+}
 
 .row-content {
     padding: 50px 0;
@@ -77,11 +80,14 @@ container1{
 
 .carousel {
     border: solid $color-secondary;
+
+  
 }
 #carouselButton {
     position: absolute;
     right: 0;
     bottom: 0;
+  z-index: 5000000000000000000;
 }
 
 
