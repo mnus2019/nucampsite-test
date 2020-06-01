@@ -210,14 +210,11 @@
                     <span class="sr-only">Next</span>
                 </a>
                
-                <div class="btn-group" id="carouselButton">
-                    <button class="btn btn-danger btn-sm" id="carouselPause">
+               
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
                         <i class="fa fa-pause"></i>
                     </button>
-                    <button class="btn btn-danger btn-sm" id="carouselPlay">
-                        <i class="fa fa-play"></i>
-                    </button>
-                </div> 
+                  
                                      
                   
                 
@@ -370,11 +367,16 @@
     <script>
         $(function() {
             $(".carousel").carousel( { interval: 500 } );
-            $("#carouselPause").mouseover(function(){
-                $(".carousel").carousel("pause");
-            });
-            $("#carouselPlay").mouseover(function(){
-                $(".carousel").carousel("cycle");
+            $("#carouselButton").mouseover(function(){
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause"); 
+                }
             });
         });
     </script>
