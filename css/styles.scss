@@ -1,3 +1,5 @@
+
+$color-teal:#17A2B8;
 $color-primary: #3046C5;
 $color-secondary: #7437dd;
 $color-pale: #CEC8FF;
@@ -88,6 +90,19 @@ img{
     right: 0;
     bottom: 0;
   z-index: 5;
+}
+
+#reserveModal,#loginModal{
+    .modal-header{
+        background-color: $color-teal;
+        color: white;
+    }
+}
+#loginModal{
+    .modal-header{
+        background-color: $color-mid;
+        color: white;
+    }
 }
 
 
